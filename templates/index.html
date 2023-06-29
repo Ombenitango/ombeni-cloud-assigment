@@ -46,7 +46,7 @@
   </nav>
 
   <div id="signUpModal" class="modal">
-    <div class="modal-content">
+    <div class="modal-content red light-1">
       <h4>SignUp</h4>
       <div class="row">
         <form class="col s12" action="/signup" method="post" id="signUpForm">
@@ -74,7 +74,7 @@
       </div>
     </div>
     <div class="modal-footer">
-      <a class="modal-action modal-close waves-effect waves-green btn-flat" onclick="$('#signUpForm').submit();">Agree</a>
+      <a class="modal-action modal-close waves-effect waves-green btn-flat" onclick="$('#signUpForm').submit();">Submit</a>
     </div>
   </div>
   <div id="signInModal" class="modal">
@@ -108,8 +108,8 @@
 
 
  <div id="postingModal" class="modal">
-  <div class="modal-content">
-    <h4>Posting</h4>
+  <div class="modal-content red-1">
+    <h4>Write a your post</h4>
     <div class="row">
       <form class="col s12" id="postingForm" enctype="multipart/form-data">
         <div class="row">
@@ -205,7 +205,7 @@
       var picture_url = modal.find('#picture_url').val();
 
       if(!title || !content){
-        alert("Empty form is NONO!!");
+        alert("Empty form is Empty");
         return;
       }
 
